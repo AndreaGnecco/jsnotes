@@ -11,6 +11,7 @@
     height: 100%;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
     align-content: center;
     /* border: 1px solid black; */
@@ -65,7 +66,7 @@
 .cadastro-notas {
     display: flex;
     flex-direction: column;
-    width:70%;
+    width:80%;
     height: 15em;
     margin-top: 3em;
     border: 2px solid #a4a4a4;
@@ -74,10 +75,10 @@
 }
 
 .cadastro-notas__titulo {
-    width: 12em;
+    width: 11.5em;
     padding: .3em;
     position: relative;
-    right: -.3em;
+    right: -.9em;
     top: -0.7em;
     font-size: .8em;
     font-family: Arial, Helvetica, sans-serif;
@@ -87,18 +88,46 @@
 }
 
 .cadastro-notas__input {
-    height: 2em;
+    align-self: center;
+    width: 95%;
+    height: 4em;
     border: none;
     border-radius: 5px;
     margin: 0 1em;
 }
 
-.cadastro-notas__items {
+.cadastro-notas__itens {
     align-self: center;
-    width:90%;
+    width: 95%;
     height: 15em;
     margin: 1em 0;
     border: 2px solid #a4a4a4;
     border-radius: 10px;
+}
+
+.adiciona-item {
+    position: relative;
+    right: 3em;
+    top: 1.7em; 
+    font-size: 0.8em;
+    color: #a4a4a4;
+    width: 2em;
+    height: 2em;
+    background-color: #e8e8e8;
+    border: 2px solid #a4a4a4;
+    border-radius: 5px;
+
+}
+
+.nota {
+    min-width: 10em;
+    min-height: 10em;
+    max-width: 30em;
+    max-height: 30em;
+    resize: both;
+    overflow: auto;
+    margin: 2em;
+    background-color: yellowgreen;
+    box-shadow: 0 2px 2px 0 #757575;
 }
 

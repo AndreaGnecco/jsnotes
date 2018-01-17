@@ -25,10 +25,10 @@
             </a>
             <input type="search" placeholder="PESQUISAR" class="input">
             <div class="icons">
-            <img src="img/refresh_icon.png" class="header__icons--item">
-            <img src="img/eye.png">
-            <img src="img/mail.png">
-            <img src="img/user.png">
+                <img src="img/refresh_icon.png" class="header__icons--item">
+                <img src="img/eye.png">
+                <img src="img/mail.png">
+                <img src="img/user.png">
             </div>
 
         </div>
@@ -37,11 +37,17 @@
             <span class="cadastro-notas__titulo">CADASTRO DE NOTAS</span>
             <span class="cadastro-notas__titulo">TÍTULO</span>
             <input type="text" name="titulo" id="notas" class="cadastro-notas__input">
-            <div class="cadastro-notas__items">
+            <div class="cadastro-notas__itens">
                 <span class="cadastro-notas__titulo">ITENS</span>
-                <input type="button">
+                <input type="button" id="btnAdd" value="+" onclick="addItem()" class="adiciona-item">
+                <input type="text" name="titulo" id="notas" class="cadastro-notas__input--itens">
+
             </div>
 
+        </div>
+
+        <div id="nota" class="nota">
+            <p id=noteTitle></p>
         </div>
     </section>
 
