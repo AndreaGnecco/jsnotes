@@ -74,7 +74,7 @@
     /* border: 1px solid black; */
 }
 
-.cadastro-notas__titulo {
+.cadastro-notas__titulo1 {
     width: 11.5em;
     padding: .3em;
     position: relative;
@@ -88,6 +88,7 @@
 }
 
 .cadastro-notas__input {
+    display: flex;
     align-self: center;
     width: 95%;
     height: 4em;
@@ -96,13 +97,21 @@
     margin: 0 1em;
 }
 
-.cadastro-notas__itens {
+.cadastro-notas__titulo2 {
     align-self: center;
     width: 95%;
     height: 15em;
     margin: 1em 0;
     border: 2px solid #a4a4a4;
     border-radius: 10px;
+}
+
+.input-item {
+    width: 85%;
+    height: 2em;
+    border: none;
+    border-radius: 5px;
+    margin: 0 1em;
 }
 
 .adiciona-item {
