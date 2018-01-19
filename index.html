@@ -25,10 +25,18 @@
             </a>
             <input type="search" placeholder="PESQUISAR" class="input">
             <div class="icons">
-                <div class="icons__img"><img src="img/refresh_icon.png"></div>
-                <div class="icons__img"><img src="img/eye.png"></div>
-                <div class="icons__img"><img src="img/mail.png"></div>
-                <div class="icons__img"><img src="img/user.png"></div>
+                <div class="icons__img">
+                    <img src="img/refresh_icon.png">
+                </div>
+                <div class="icons__img">
+                    <img src="img/eye.png">
+                </div>
+                <div class="icons__img">
+                    <img src="img/mail.png">
+                </div>
+                <div class="icons__img">
+                    <img src="img/user.png">
+                </div>
             </div>
 
         </div>
@@ -37,20 +45,22 @@
             <span class="cadastro-notas__titulo">CADASTRO DE NOTAS</span>
             <span class="cadastro-notas__titulo">TÍTULO</span>
             <input type="text" name="titulo" id="notas" class="cadastro-notas__input">
-            <div class="cadastro-notas__inside">
+            <div class="cadastro-notas__inside" id="add-notes">
                 <span class="cadastro-notas__inside--titulo">ITENS</span>
                 <input type="button" id="btnAdd" value="+" onclick="addItem()" class="cadastro-notas__inside--add-delete">
-               <div><label class="cadastro-notas__inside--label">ITEM</label><input type="text" name="titulo" id="notas" class="cadastro-notas__inside--input"><input type="button" id="btnDel" value="-" onclick="deleteItem()" class="cadastro-notas__inside--add-delete"></div>
+                <div class = "cadastro-notas__inside--tudo" id="items">
+                    <!-- <label class="cadastro-notas__inside--label">ITEM</label>
+                    <input type="text" name="item" id="notas" class="cadastro-notas__inside--input">
+                    <input type="button" id="btnDel" value="-" onclick="deleteItem()" class="cadastro-notas__inside--add-delete"> -->
+                </div>
 
             </div>
 
         </div>
 
-        <!--<div id="nota" class="nota">
-            <p id=noteTitle></p>-->
-        </div>
-    </section>
 
+    </section>
+<script src="js/javascript.js"></script>
 </body>
 
 </html>

@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+
+
 .body {
     background-color: #e8e8e8;
     position: absolute;
@@ -140,6 +142,10 @@
     border-radius: 5px;
 }
 
+.cadastro-notas__inside--tudo {
+   
+}
+
 
 .cadastro-notas__inside--label {
     font-size: .8em;
@@ -150,7 +156,7 @@
 }
 
 .cadastro-notas__inside--input {
-    width: 85%;
+    width: 65%;
     height: 2em;
     border: none;
     border-radius: 5px;
@@ -170,6 +176,9 @@
     background-color: yellowgreen;
     box-shadow: 0 2px 2px 0 #757575;
 }
+
+
+
 
 @media (min-width: 768px) {
     .icons {
