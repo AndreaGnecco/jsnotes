@@ -47,16 +47,14 @@
             <input type="text" name="titulo" id="notas" class="cadastro-notas__input">
             <div class="cadastro-notas__inside" id="add-notes">
                 <span class="cadastro-notas__inside--titulo">ITENS</span>
-                <input type="button" id="btnAdd" value="+" onclick="addItem()" class="cadastro-notas__inside--add-delete">
+                <input type="button" id="btnAdd" value="+" onclick="addItem(this.div,null)" class="cadastro-notas__inside--add-delete">
                 <!--<div class = "cadastro-notas__inside--tudo" id="items">
                     <label class="cadastro-notas__inside--label">ITEM</label>
                     <input type="text" name="item" id="notas" class="cadastro-notas__inside--input">
                     <input type="button" id="btnDel" value="-" onclick="deleteItem()" class="cadastro-notas__inside--add-delete"> 
-                </div>-->
-                <input type="button" id="btnDom" value="Cadastrar c/ DOM" onClick="addNote()" class="cadastro-notas__inside--button">
+                </div>               -->
+                <input type="button" id="btnDom" value="Cadastrar" onClick="addNote()" class="cadastro-notas__inside--button">
                 <input type="button" id="btnClear" value="Limpar" onClick="addNote()" class="cadastro-notas__inside--button">
-                <input type="button" id="btnNdom" value="Cadastrar s/ DOM" onClick="addNote()" class="cadastro-notas__inside--button">
-
             </div>
 
         </div>

@@ -99,7 +99,7 @@
     display: flex;
     align-self: center;
     width: 95%;
-    height: 4em;
+    height: 2em;
     border: none;
     border-radius: 5px;
     margin: 0 1em;
@@ -111,7 +111,7 @@
     align-content: center;
     align-self: center;
     width: 95%;
-    min-height: 12em;
+    min-height: 10em;
     max-height: 30em;
     margin: 1em 0;
     padding: 0 1rem;
@@ -131,6 +131,10 @@
     color: #a4a4a4;
     background-color: #e8e8e8;
     /* border: 1px solid black; */
+}
+
+.cadastro-notas__inside--tudo {
+    margin: 1rem;
 }
 
 .cadastro-notas__inside--add-delete {
@@ -165,7 +169,7 @@
 .cadastro-notas__inside--button {
     align-self: flex-end;
     background-color: #FDBA2C;
-    width: 60%;
+    min-width: 100px;
     height: 30px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: .9em;
