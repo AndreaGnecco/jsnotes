@@ -37,7 +37,7 @@
     border: none;
 }
 
-.header__drop-down {
+.drop-down-menu {
     width: 21px;
     height: 30px;
     display: flex;
@@ -46,19 +46,19 @@
     margin: 10px;
 }
 
-.header__drop-down--bar {
+.drop-down-bar {
     background-color: #000;
     width: 21px;
     height: 3px;
     margin: 2px 0;
 }
 
-.header__search{
+.search {
     position: relative;
     left: 2rem;
 }
 
-.header__icons {
+.icons {
     visibility: hidden; 
 }
 
@@ -71,28 +71,39 @@
     align-items: center;
 }
 
-.main__box {
-    width: 80%;
+.main-box {
+    width: 90%;
     min-height: 15rem;
     max-height: 30rem;
     display: flex;
     flex-direction: column;
+    align-self: center;
     font-size: .8rem;
     font-family: Arial, Helvetica, sans-serif;
-    margin: 3rem;
+    margin: 2rem;
     border: 2px solid #a4a4a4;
     border-radius: 10px;
 }
 
-.main__box--titulos {
+.main-box span {
+    position: relative;
+    width: 9rem;    
+    height: 1.5rem;
+    top: -0.5rem;
+    left: 1rem;
+    color: #a4a4a4;
+    background-color: #e8e8e8;
+}
+
+
+.main-box form {
     display: flex;
     flex-direction: column;
 }
 
-.main__box--titulos span, label {
-    width: 9.5rem;
+.main-box label {
+    width: 3rem;
     height: 1.5rem;
-    background-color: #e8e8e8;
     color: #a4a4a4;
     position: relative;
     right: -.9em;
@@ -100,7 +111,7 @@
     padding: .3rem;
 }
 
-.main__box--titulos input {
+.main-box input {
     width: 90%;
     height: 20px;
     align-self: center;
@@ -109,115 +120,69 @@
     margin-bottom: 15px;
 }
 
-.main__box--itens {
+.submain-box {
     width: 95%;
-    min-height: 10em;
-    max-height: 30em;
+    min-height: 15rem;
+    max-height: 30rem;
     display: flex;
     flex-direction: column;
-    align-content: center;
     align-self: center;
+    font-size: .8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 1.2rem;
+    padding: 0 0.5rem;
     border: 2px solid #a4a4a4;
     border-radius: 10px;
 }
 
-
-.main__box--itens span {
-    width: 3rem;
-    height: 1.5rem;
-    background-color: #e8e8e8;
-    color: #a4a4a4;
+.submain-box span {
     position: relative;
-    right: -.9em;
-    top: -0.9em;
-    padding: .3rem;
+    width: 2.5rem;    
+    height: 1.5rem;
+    top: -0.6rem;
+    left: 1rem;
+    color: #a4a4a4;
+    background-color: #e8e8e8;
 }
 
-.main__box--itens label {
-    width: 3rem;
-    height: 1.5rem;
-    background-color: #e8e8e8;
-    color: #a4a4a4;
-    position: relative;
-    right: -.9em;
-    top: -0.9em;
-    padding: .3rem;
-}
-
-.main__box--itens input {
-    width: 90%;
+.submain-box input {
+    width: 20px;
     height: 20px;
-    align-self: center;
+    align-self: flex-start;
+    color: #a4a4a4;
+    background-color: #e8e8e8;
+    border: 2px solid #a4a4a4;
+    margin: 0 .5rem;
+}
+
+.item {
+
+    border: 1px solid black;
+
+}
+
+.item label {
+    width: 3rem;
+    height: 1.5rem;
+    color: #a4a4a4;
+    border: 1px solid black;
+}
+
+.item input {
+    width: 70%;
+    height: 20px;
+    background-color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
     border: none;
     border-radius: 5px;
-    margin-bottom: 15px;
+    margin: .5rem;
+    border: 1px solid black;
+
 }
-
-.main__box--itens 
-
-
-    .cadastro-notas__inside--add-delete {
-        font-size: 0.8em;
-        color: #a4a4a4;
-        width: 2em;
-        height: 2em;
-        background-color: #e8e8e8;
-        margin-bottom: 1.2rem;
-        border: 2px solid #a4a4a4;
-        border-radius: 5px;
-    }
-
-
-
-    .cadastro-notas__inside--label {
-        font-size: .8em;
-        font-family: Arial, Helvetica, sans-serif;
-        color: #a4a4a4;
-        background-color: #e8e8e8;
-        /* border: 1px solid black; */
-    }
-
-    .cadastro-notas__inside--input {
-        width: 65%;
-        height: 2em;
-        border: none;
-        border-radius: 5px;
-        margin: 0 1em;
-    }
-
-    .cadastro-notas__inside--button {
-        align-self: flex-end;
-        background-color: #FDBA2C;
-        min-width: 100px;
-        height: 30px;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: .9em;
-        border: none;
-        border-radius: 5px;
-        box-shadow: 0 2px 2px 0px #757575;
-        margin: 0.3em;
-    }
-
-
-
-    .nota {
-        min-width: 10em;
-        min-height: 10em;
-        max-width: 30em;
-        max-height: 30em;
-        resize: both;
-        overflow: auto;
-        margin: 2em;
-        background-color: yellowgreen;
-        box-shadow: 0 2px 2px 0 #757575;
-    }
-
-
-
 
     @media (min-width: 768px) {
 
-        .header__icons {
+        .icons {
             width:40%;
             display: flex;
             flex-direction: row;
@@ -225,7 +190,7 @@
             visibility: visible; 
         }
         
-        .header__icons--img {
+        .icons-img {
             flex-basis: 3.5em; 
         }
     }

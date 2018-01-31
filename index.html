@@ -11,67 +11,52 @@
 
 <body class="body">
     <header class="header">
-        <div class="header__drop-down">
-            <div class="header__drop-down--bar"></div>
-            <div class="header__drop-down--bar"></div>
-            <div class="header__drop-down--bar"></div>
+        <div class="drop-down-menu">
+            <div class="drop-down-bar"></div>
+            <div class="drop-down-bar"></div>
+            <div class="drop-down-bar"></div>
         </div>
         <a href="">
             <img src="img/logo.png" alt="JS NOTES">
         </a>
         <a href="">
-            <img src="img/search_icon.png" class="header__search">
+            <img src="img/search_icon.png" class="search">
         </a>
-        <input type="search" placeholder="PESQUISAR" class="header input">
-        <div class="header__icons">
-            <div class="header__icons--img">
+        <input type="search" placeholder="PESQUISAR">
+        <div class="icons">
+            <div class="icons-img">
                 <img src="img/refresh_icon.png">
             </div>
-            <div class="header__icons--img">
+            <div class="icons-img">
                 <img src="img/eye.png">
             </div>
-            <div class="header__icons--img">
+            <div class="icons-img">
                 <img src="img/mail.png">
             </div>
-            <div class="header__icons--img">
+            <div class="icons-img">
                 <img src="img/user.png">
             </div>
         </div>
 
     </header>
     <main class="main">
-        <div class="main__box">
-            <form class="main__box--titulos">
-                <span>CADASTRO DE NOTAS</span>
+        <div class="main-box">
+            <span>CADASTRO DE NOTAS</span>
+            <form>
                 <label>TÍTULO</label>
                 <input type="text">
             </form>
-            <form class="main__box--itens">
+            <div class="submain-box">
                 <span>ITENS</span>
-                <label>ITEM</label>
-                <input type="text">
-            </form>
+                <input type="button" value="+" onclick="">
+                <form class="item">
+                    <label>ITEM</label>
+                    <input type="text" value="">
+                </form>
+                <input type="button" value="-" onclick="">
+
+            </div>
         </div>
-
-
-
-        <!-- <form class="cadastro-notas">
-            <span class="cadastro-notas__titulo">CADASTRO DE NOTAS</span>
-            <span class="cadastro-notas__titulo">TÍTULO</span>
-            <input type="text" name="titulo" id="notas" class="cadastro-notas__input">
-            <form class="cadastro-notas__inside" id="add-notes">
-                <span class="cadastro-notas__inside--titulo">ITENS</span>
-                <input type="button" id="btnAdd" value="+" onclick="addInput()" class="cadastro-notas__inside--add-delete">
-                <input type="button" id="btnDom" value="Cadastrar" onClick="addNote()" class="cadastro-notas__inside--button">
-                <input type="button" id="btnClear" value="Limpar" onClick="addNote()" class="cadastro-notas__inside--button">
-            </form>
-        </form> -->
-
-        <!--<div class = "cadastro-notas__inside--tudo" id="items">
-                    <label class="cadastro-notas__inside--label">ITEM</label>
-                    <input type="text" name="item" id="notas" class="cadastro-notas__inside--input">
-                    <input type="button" id="btnDel" value="-" onclick="deleteItem()" class="cadastro-notas__inside--add-delete"> </div>-->
-
 
     </main>
 
