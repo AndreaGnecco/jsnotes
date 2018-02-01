@@ -22,7 +22,7 @@
         <a href="">
             <img src="img/search_icon.png" class="search">
         </a>
-        <input type="search" placeholder="PESQUISAR">
+        <input type="search" class="header-input" placeholder="PESQUISAR">
         <div class="icons">
             <div class="icons-img">
                 <img src="img/refresh_icon.png">
@@ -41,19 +41,19 @@
     </header>
     <main class="main">
         <div class="main-box">
-            <span>CADASTRO DE NOTAS</span>
-            <form>
-                <label>TÍTULO</label>
-                <input type="text">
+            <span class="main-box-span">CADASTRO DE NOTAS</span>
+            <form class="main-box-form">
+                <label class="main-box-label">TÍTULO</label>
+                <input class="main-box-input" type="text">
             </form>
-            <div class="submain-box">
-                <span>ITENS</span>
-                <input type="button" value="+" onclick="">
-                <form class="item">
-                    <label>ITEM</label>
-                    <input type="text" value="">
-                </form>
-                <input type="button" value="-" onclick="">
+            <div class="submain-box" id="novo-item">
+                <span class="submain-box-span">ITENS</span>
+                <input class="submain-box-button" type="button" value="+" onclick="addInput(items)">
+                <!-- <form class="item">
+                    <label class="item-label">ITEM</label>
+                    <input class="item-input" type="text">
+                    <input class="item-button" type="button" value="-" onclick=""> 
+                </form> -->
 
             </div>
         </div>

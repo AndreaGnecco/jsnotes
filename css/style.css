@@ -26,7 +26,7 @@
     padding: .5rem;
 }
 
-.header input {
+.header-input {
     width: 50%;
     height: 45px;
     font-family: Arial, Helvetica, sans-serif;
@@ -85,7 +85,7 @@
     border-radius: 10px;
 }
 
-.main-box span {
+.main-box-span {
     position: relative;
     width: 9rem;    
     height: 1.5rem;
@@ -96,12 +96,12 @@
 }
 
 
-.main-box form {
+.main-box-form {
     display: flex;
     flex-direction: column;
 }
 
-.main-box label {
+.main-box-label {
     width: 3rem;
     height: 1.5rem;
     color: #a4a4a4;
@@ -111,7 +111,7 @@
     padding: .3rem;
 }
 
-.main-box input {
+.main-box-input {
     width: 90%;
     height: 20px;
     align-self: center;
@@ -135,7 +135,7 @@
     border-radius: 10px;
 }
 
-.submain-box span {
+.submain-box-span {
     position: relative;
     width: 2.5rem;    
     height: 1.5rem;
@@ -145,38 +145,45 @@
     background-color: #e8e8e8;
 }
 
-.submain-box input {
+.submain-box-button {
     width: 20px;
     height: 20px;
-    align-self: flex-start;
     color: #a4a4a4;
     background-color: #e8e8e8;
     border: 2px solid #a4a4a4;
+    border-radius: 5px;
     margin: 0 .5rem;
 }
 
 .item {
-
-    border: 1px solid black;
-
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    margin: .5rem;
 }
 
-.item label {
-    width: 3rem;
-    height: 1.5rem;
+.item-label {
     color: #a4a4a4;
-    border: 1px solid black;
+    margin: 0 .5rem;
+
 }
 
-.item input {
-    width: 70%;
+.item-input {
+    width: 75%;
     height: 20px;
-    background-color: #fff;
-    font-family: Arial, Helvetica, sans-serif;
     border: none;
     border-radius: 5px;
-    margin: .5rem;
-    border: 1px solid black;
+    margin-bottom: 15px;
+}
+
+.item-button {
+    width: 20px;
+    height: 20px;
+    color: #a4a4a4;
+    background-color: #e8e8e8;
+    border: 2px solid #a4a4a4;
+    border-radius: 5px;
+    margin: 0 .5rem;
 
 }
 
